@@ -221,7 +221,7 @@ img {
 		margin: 0 auto;
 		border-radius: 0.75rem;
 		box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
-		transition: 0.8s ease-in-out;
+		transition: 0.5s ease;
 		z-index: var(--z-fixed);
 	}
 
@@ -808,18 +808,18 @@ img {
 .contactus__item-title {
 	font-size: var(--small-font-size);
 	text-align: center;
-	color: #fff;
+	color: var(--body-color);
 	font-weight: var(--font-medium);
 }
 
 .contactus__items:hover,
 .contactus-active {
 	background-color: var(--first-color-second);
-	color: #fff;
+	color: var(--body-color);
 }
 
 .contactus-active .contactus__item-title {
-	color: #fff;
+	color: var(--body-color);
 }
 
 /*========== FORM ==========*/
