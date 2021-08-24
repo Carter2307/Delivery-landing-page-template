@@ -28,7 +28,9 @@ function scrollActive() {
 		sectionId = current.getAttribute("id");
 		console.log(sectionId);
 
-		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight && sectionId) {
+		if (sectionId === "gallery") return;
+
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 			document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link");
 		} else {
 			document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link");
