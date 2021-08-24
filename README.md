@@ -1,4 +1,4 @@
-# Responsive Sass Delivery Landing page
+# Responsive Saas Delivery Landing page
 
 ## Responsive Saas Website
 
