@@ -1,12 +1,12 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;900&display=swap");
 /*==================== VARIABLES CSS ====================*/
 :root {
 	--header-height: 3rem;
 
 	/*========== Colors ==========*/
 	/* Change favorite color */
-	--hue-color: 12;
+	--hue-color: 16;
 	/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
 	/* HSL color mode */
@@ -14,7 +14,7 @@
 	--first-color-second: hsl(var(--hue-color), 75%, 50%);
 	--first-color-alt: hsl(var(--hue-color), 100%, 65%);
 	--first-color-lighter: hsl(var(--hue-color), 92%, 80%);
-	--title-color: hsl(var(--hue-color), 8%, 15%);
+	--title-color: hsl(var(--hue-color), 8%, 26%);
 	--text-color: hsl(var(--hue-color), 2%, 30%);
 	--text-color-light: hsl(var(--hue-color), 3%, 45%);
 	--input-color: hsl(var(--hue-color), 50%, 95%);
@@ -29,7 +29,7 @@
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
 	/*========== Font and typography ==========*/
-	--body-font: "Montserrat", sans-serif;
+	--body-font: "Work sans", sans-serif;
 
 	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 	--big-font-size: 2rem;
@@ -286,6 +286,7 @@ img {
 	font-size: var(--h1-font-size);
 	font-weight: var(--font-bold);
 	margin-bottom: var(--mb-1);
+	text-transform: capitalize;
 }
 
 .hero__title-hightlight {
@@ -324,7 +325,7 @@ img {
 }
 
 .hero__img-img {
-	width: 60%;
+	width: 80%;
 }
 
 /*==================== SERVICES ====================*/
@@ -1240,10 +1241,6 @@ img {
 		align-self: center;
 	}
 
-	.nav__list {
-		column-gap: 2rem;
-	}
-
 	.items__content {
 		max-width: 335px;
 	}
@@ -1259,7 +1256,7 @@ img {
 
 @media screen and (min-width: 1200px) {
 	:root {
-		--hero-height: 840px;
+		--hero-height: 100vh;
 	}
 	.container {
 		max-width: 1180px;
@@ -1270,7 +1267,7 @@ img {
 	}
 
 	.hero__title {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 	.hero__description {
 		font-size: var(--h2-font-size);
@@ -1287,13 +1284,13 @@ img {
 	.hero__img {
 		height: var(--hero-height);
 	}
+
+	.hero__img-img {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 1400px) {
-	.container {
-		max-width: 1366px;
-	}
-
 	.pricing__card-container {
 		grid-template-columns: repeat(3, minmax(296px, 1fr));
 	}
