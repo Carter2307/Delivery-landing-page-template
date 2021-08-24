@@ -1,6 +1,6 @@
-# Responsive Delivery Landing page
+# Responsive Sass Delivery Landing page
 
-## Responsive Website Restaurant
+## Responsive Saas Website
 
 Nice design of a responsive delivery bussiness website . It contains a
 
