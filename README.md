@@ -2,7 +2,7 @@
 
 ## Responsive Saas Website
 
-Nice design of a responsive delivery bussiness website . It contains a
+Nice design of a responsive Sass delivery bussiness website . It contains
 
 - header,
 - home,
