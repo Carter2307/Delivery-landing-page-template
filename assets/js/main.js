@@ -28,7 +28,6 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = Array.from(document.querySelectorAll("section[id]"));
-console.log(sections);
 function scrollActive() {
 	const scrollY = window.pageYOffset;
 
@@ -36,7 +35,6 @@ function scrollActive() {
 		const sectionHeight = current.offsetHeight;
 		const sectionTop = current.offsetTop - 50;
 		sectionId = current.getAttribute("id");
-		console.log(sectionId);
 
 		if (sectionId === "gallery") return;
 
@@ -230,3 +228,19 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
+
+/*==================== SCROLLREVEAL ====================*/
+ScrollReveal({ viewFactor: 0.5 });
+/*=========== Nav link ===========*/
+ScrollReveal().reveal(".nav__item", { origin: "top", distance: "100%", duration: "1000", delay: "500", interval: "300", mobile: false });
+
+/*=========== Hero ===========*/
+ScrollReveal().reveal(".hero__title", { origin: "bottom", distance: "100%", duration: "1000", delay: "100" });
+ScrollReveal().reveal(".hero__description", { origin: "bottom", distance: "100%", duration: "1000", delay: "400" });
+ScrollReveal().reveal(".button", { origin: "bottom", distance: "100%", duration: "1000", delay: "600" });
+ScrollReveal().reveal(".hero__img img", { origin: "right", distance: "100%", duration: "1000", delay: "800" });
+
+/*=========== Sevices ===========*/
+ScrollReveal().reveal(".services__title", { origin: "bottom", distance: "100%", duration: "300", delay: "400" });
+ScrollReveal().reveal(".services__img", { origin: "left", distance: "100%", duration: "800" });
+ScrollReveal().reveal(".button", { origin: "bottom", distance: "100%", duration: "1400" });

@@ -1,12 +1,12 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;900&display=swap");
+@import url('http://fonts.cdnfonts.com/css/gordita');
 /*==================== VARIABLES CSS ====================*/
 :root {
 	--header-height: 3rem;
 
 	/*========== Colors ==========*/
 	/* Change favorite color */
-	--hue-color: 16;
+	--hue-color: 1;
 	/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
 	/* HSL color mode */
@@ -29,7 +29,7 @@
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
 	/*========== Font and typography ==========*/
-	--body-font: "Work sans", sans-serif;
+	--body-font: "Gordita", sans-serif;
 
 	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 	--big-font-size: 2rem;
@@ -110,6 +110,7 @@ body {
 	line-height: var(--line-height-normal);
 	margin: var(--header-height) 0 0;
 	padding: 0;
+	overflow-x: hidden;
 	background-color: var(--body-color);
 }
 
@@ -594,6 +595,10 @@ img {
 }
 
 /*==================== GALERIES ====================*/
+.gallery__container {
+	position: relative;
+	overflow: hidden;
+}
 
 .gallery__items {
 	position: relative;
@@ -634,6 +639,7 @@ img {
 }
 
 /*========== SWIPER CUSTOM NAVIGATION BUTTONS ==========*/
+
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after,
 .swiper-button-prev:after,
@@ -647,7 +653,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 2px 6px rgba(202, 194, 194, 0.5);
 	border-radius: 50%;
 	height: 48px;
 	width: 48px;
@@ -665,7 +671,17 @@ img {
 	font-size: var(--big-font-size);
 	color: var(--first-color);
 }
+.swiper-pagination {
+	left: 50%;
+	transform: translatex(-50%);
+}
+.swiper-pagination-bullet {
+	margin: 0 var(--mb-0-5);
+}
 
+.swiper-pagination-bullet-active {
+	background-color: var(--first-color);
+}
 /*==================== FAQ ====================*/
 .faq {
 	row-gap: var(--mb-2);
